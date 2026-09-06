@@ -161,6 +161,7 @@ namespace _4RTools.Forms
             this.lbPowered.Name = "lbPowered";
             this.lbPowered.Size = new System.Drawing.Size(181, 13);
             this.lbPowered.TabIndex = 0;
+            this.lbPowered.UseMnemonic = false;
             this.lbPowered.Text = "PapelTools · fork de 4RTools (AuTHEntiC & MarkiinG)";
             // 
             // panel4

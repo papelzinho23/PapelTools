@@ -78,19 +78,21 @@ namespace _4RTools.Forms
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
 
-            this.BuildSlot(this.groupBox1, 10, "Skill timer 1", this.lblDelay1, this.txtAutoRefreshDelay, this.lblSec1, this.lblKey1, this.txtSkillTimerKey);
-            this.BuildSlot(this.groupBox2, 182, "Skill timer 2", this.lblDelay2, this.txtAutoRefreshDelay2, this.lblSec2, this.lblKey2, this.txtSkillTimerKey2);
-            this.BuildSlot(this.groupBox3, 354, "Skill timer 3", this.lblDelay3, this.txtAutoRefreshDelay3, this.lblSec3, this.lblKey3, this.txtSkillTimerKey3);
-            this.BuildSlot(this.groupBox4, 526, "Skill timer 4", this.lblDelay4, this.txtAutoRefreshDelay4, this.lblSec4, this.lblKey4, this.txtSkillTimerKey4);
-            this.BuildSlot(this.groupBox5, 698, "Skill timer 5", this.lblDelay5, this.txtAutoRefreshDelay5, this.lblSec5, this.lblKey5, this.txtSkillTimerKey5);
+            // stacked one below another
+            this.BuildSlot(this.groupBox1, 2,   "Skill timer 1", this.lblDelay1, this.txtAutoRefreshDelay,  this.lblSec1, this.lblKey1, this.txtSkillTimerKey);
+            this.BuildSlot(this.groupBox2, 47,  "Skill timer 2", this.lblDelay2, this.txtAutoRefreshDelay2, this.lblSec2, this.lblKey2, this.txtSkillTimerKey2);
+            this.BuildSlot(this.groupBox3, 92,  "Skill timer 3", this.lblDelay3, this.txtAutoRefreshDelay3, this.lblSec3, this.lblKey3, this.txtSkillTimerKey3);
+            this.BuildSlot(this.groupBox4, 137, "Skill timer 4", this.lblDelay4, this.txtAutoRefreshDelay4, this.lblSec4, this.lblKey4, this.txtSkillTimerKey4);
+            this.BuildSlot(this.groupBox5, 182, "Skill timer 5", this.lblDelay5, this.txtAutoRefreshDelay5, this.lblSec5, this.lblKey5, this.txtSkillTimerKey5);
 
             //
             // lblHint
             //
             this.lblHint.AutoSize = true;
             this.lblHint.ForeColor = System.Drawing.Color.DimGray;
-            this.lblHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.lblHint.Location = new System.Drawing.Point(12, 128);
+            this.lblHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F);
+            this.lblHint.Location = new System.Drawing.Point(9, 230);
+            this.lblHint.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblHint.Name = "lblHint";
             this.lblHint.Size = new System.Drawing.Size(10, 13);
             this.lblHint.TabIndex = 50;
@@ -100,8 +102,9 @@ namespace _4RTools.Forms
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(865, 274);
+            this.ClientSize = new System.Drawing.Size(320, 274);
             this.Controls.Add(this.lblHint);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -132,24 +135,24 @@ namespace _4RTools.Forms
             this.PerformLayout();
         }
 
-        private void BuildSlot(System.Windows.Forms.GroupBox box, int x, string title,
+        private void BuildSlot(System.Windows.Forms.GroupBox box, int y, string title,
             System.Windows.Forms.Label lblDelay, System.Windows.Forms.NumericUpDown delay,
             System.Windows.Forms.Label lblSec, System.Windows.Forms.Label lblKey,
             System.Windows.Forms.TextBox key)
         {
-            box.Location = new System.Drawing.Point(x, 12);
-            box.Size = new System.Drawing.Size(165, 100);
+            box.Location = new System.Drawing.Point(8, y);
+            box.Size = new System.Drawing.Size(300, 44);
             box.TabStop = false;
             box.Text = title;
 
             lblDelay.AutoSize = true;
             lblDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            lblDelay.Location = new System.Drawing.Point(12, 30);
+            lblDelay.Location = new System.Drawing.Point(8, 19);
             lblDelay.Text = "Delay";
 
-            delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            delay.Location = new System.Drawing.Point(52, 26);
-            delay.Size = new System.Drawing.Size(64, 23);
+            delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            delay.Location = new System.Drawing.Point(46, 15);
+            delay.Size = new System.Drawing.Size(52, 22);
             delay.DecimalPlaces = 1;
             delay.Increment = new decimal(new int[] { 1, 0, 0, 65536 });   // 0.1
             delay.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
@@ -158,17 +161,17 @@ namespace _4RTools.Forms
 
             lblSec.AutoSize = true;
             lblSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            lblSec.Location = new System.Drawing.Point(120, 30);
+            lblSec.Location = new System.Drawing.Point(101, 19);
             lblSec.Text = "sec";
 
             lblKey.AutoSize = true;
             lblKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            lblKey.Location = new System.Drawing.Point(12, 62);
+            lblKey.Location = new System.Drawing.Point(148, 19);
             lblKey.Text = "Key";
 
-            key.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            key.Location = new System.Drawing.Point(52, 58);
-            key.Size = new System.Drawing.Size(64, 23);
+            key.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            key.Location = new System.Drawing.Point(180, 15);
+            key.Size = new System.Drawing.Size(110, 22);
 
             box.Controls.Add(lblDelay);
             box.Controls.Add(delay);
