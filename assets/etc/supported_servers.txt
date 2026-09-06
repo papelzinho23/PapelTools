@@ -1,5 +1,11 @@
 [
   {
+    "name": "#Ethel Adventure",
+    "description": "Ethel Adventure",
+    "hpAddress": "0x017314C0",
+    "nameAddress": "0x01734130"
+  },
+  {
     "name": "rtales.bin",
     "description": "Ragna Tales",
     "hpAddress": "0x00E8E434",
