@@ -1,4 +1,4 @@
-﻿namespace _4RTools.Forms
+namespace _4RTools.Forms
 {
     partial class SkillTimerForm
     {
@@ -28,274 +28,193 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtAutoRefreshDelay = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSkillTimerKey = new System.Windows.Forms.TextBox();
-            this.lblAutoRefreshKey = new System.Windows.Forms.Label();
-            this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtAutoRefreshDelay2 = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtSkillTimerKey2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+
+            this.txtAutoRefreshDelay = new System.Windows.Forms.NumericUpDown();
+            this.txtAutoRefreshDelay2 = new System.Windows.Forms.NumericUpDown();
             this.txtAutoRefreshDelay3 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtAutoRefreshDelay4 = new System.Windows.Forms.NumericUpDown();
+            this.txtAutoRefreshDelay5 = new System.Windows.Forms.NumericUpDown();
+
+            this.txtSkillTimerKey = new System.Windows.Forms.TextBox();
+            this.txtSkillTimerKey2 = new System.Windows.Forms.TextBox();
             this.txtSkillTimerKey3 = new System.Windows.Forms.TextBox();
+            this.txtSkillTimerKey4 = new System.Windows.Forms.TextBox();
+            this.txtSkillTimerKey5 = new System.Windows.Forms.TextBox();
+
+            this.lblDelay1 = new System.Windows.Forms.Label();
+            this.lblDelay2 = new System.Windows.Forms.Label();
+            this.lblDelay3 = new System.Windows.Forms.Label();
+            this.lblDelay4 = new System.Windows.Forms.Label();
+            this.lblDelay5 = new System.Windows.Forms.Label();
+
+            this.lblKey1 = new System.Windows.Forms.Label();
+            this.lblKey2 = new System.Windows.Forms.Label();
+            this.lblKey3 = new System.Windows.Forms.Label();
+            this.lblKey4 = new System.Windows.Forms.Label();
+            this.lblKey5 = new System.Windows.Forms.Label();
+
+            this.lblSec1 = new System.Windows.Forms.Label();
+            this.lblSec2 = new System.Windows.Forms.Label();
+            this.lblSec3 = new System.Windows.Forms.Label();
+            this.lblSec4 = new System.Windows.Forms.Label();
+            this.lblSec5 = new System.Windows.Forms.Label();
+
+            this.lblHint = new System.Windows.Forms.Label();
+
             ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay5)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay2)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay3)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtAutoRefreshDelay
-            // 
-            this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(60, 25);
-            this.txtAutoRefreshDelay.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtAutoRefreshDelay.Name = "txtAutoRefreshDelay";
-            this.txtAutoRefreshDelay.Size = new System.Drawing.Size(61, 23);
-            this.txtAutoRefreshDelay.TabIndex = 34;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label2.Location = new System.Drawing.Point(121, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "sec";
-            // 
-            // txtSkillTimerKey
-            // 
-            this.txtSkillTimerKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSkillTimerKey.Location = new System.Drawing.Point(60, 53);
-            this.txtSkillTimerKey.Name = "txtSkillTimerKey";
-            this.txtSkillTimerKey.Size = new System.Drawing.Size(61, 23);
-            this.txtSkillTimerKey.TabIndex = 4;
-            // 
-            // lblAutoRefreshKey
-            // 
-            this.lblAutoRefreshKey.AutoSize = true;
-            this.lblAutoRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshKey.Location = new System.Drawing.Point(30, 57);
-            this.lblAutoRefreshKey.Name = "lblAutoRefreshKey";
-            this.lblAutoRefreshKey.Size = new System.Drawing.Size(27, 15);
-            this.lblAutoRefreshKey.TabIndex = 1;
-            this.lblAutoRefreshKey.Text = "Key";
-            // 
-            // lblAutoRefreshDelay
-            // 
-            this.lblAutoRefreshDelay.AutoSize = true;
-            this.lblAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(16, 29);
-            this.lblAutoRefreshDelay.Name = "lblAutoRefreshDelay";
-            this.lblAutoRefreshDelay.Size = new System.Drawing.Size(38, 15);
-            this.lblAutoRefreshDelay.TabIndex = 0;
-            this.lblAutoRefreshDelay.Text = "Delay";
-            this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.lblAutoRefreshDelay);
-            this.groupBox1.Controls.Add(this.txtAutoRefreshDelay);
-            this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtSkillTimerKey);
-            this.groupBox1.Location = new System.Drawing.Point(15, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(173, 100);
-            this.groupBox1.TabIndex = 35;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Skill timer 1";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txtAutoRefreshDelay2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.txtSkillTimerKey2);
-            this.groupBox2.Location = new System.Drawing.Point(194, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(173, 100);
-            this.groupBox2.TabIndex = 36;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Skill timer 2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label1.Location = new System.Drawing.Point(16, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Delay";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtAutoRefreshDelay2
-            // 
-            this.txtAutoRefreshDelay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoRefreshDelay2.Location = new System.Drawing.Point(60, 25);
-            this.txtAutoRefreshDelay2.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtAutoRefreshDelay2.Name = "txtAutoRefreshDelay2";
-            this.txtAutoRefreshDelay2.Size = new System.Drawing.Size(61, 23);
-            this.txtAutoRefreshDelay2.TabIndex = 34;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label3.Location = new System.Drawing.Point(30, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Key";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label4.Location = new System.Drawing.Point(121, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "sec";
-            // 
-            // txtSkillTimerKey2
-            // 
-            this.txtSkillTimerKey2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSkillTimerKey2.Location = new System.Drawing.Point(60, 53);
-            this.txtSkillTimerKey2.Name = "txtSkillTimerKey2";
-            this.txtSkillTimerKey2.Size = new System.Drawing.Size(61, 23);
-            this.txtSkillTimerKey2.TabIndex = 4;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.txtAutoRefreshDelay3);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.txtSkillTimerKey3);
-            this.groupBox3.Location = new System.Drawing.Point(373, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(173, 100);
-            this.groupBox3.TabIndex = 36;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Skill timer 3";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label5.Location = new System.Drawing.Point(16, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 15);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Delay";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtAutoRefreshDelay3
-            // 
-            this.txtAutoRefreshDelay3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoRefreshDelay3.Location = new System.Drawing.Point(60, 25);
-            this.txtAutoRefreshDelay3.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtAutoRefreshDelay3.Name = "txtAutoRefreshDelay3";
-            this.txtAutoRefreshDelay3.Size = new System.Drawing.Size(61, 23);
-            this.txtAutoRefreshDelay3.TabIndex = 34;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label6.Location = new System.Drawing.Point(30, 57);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 15);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Key";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label7.Location = new System.Drawing.Point(121, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 15);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "sec";
-            // 
-            // txtSkillTimerKey3
-            // 
-            this.txtSkillTimerKey3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSkillTimerKey3.Location = new System.Drawing.Point(60, 53);
-            this.txtSkillTimerKey3.Name = "txtSkillTimerKey3";
-            this.txtSkillTimerKey3.Size = new System.Drawing.Size(61, 23);
-            this.txtSkillTimerKey3.TabIndex = 4;
-            // 
+
+            this.BuildSlot(this.groupBox1, 10, "Skill timer 1", this.lblDelay1, this.txtAutoRefreshDelay, this.lblSec1, this.lblKey1, this.txtSkillTimerKey);
+            this.BuildSlot(this.groupBox2, 182, "Skill timer 2", this.lblDelay2, this.txtAutoRefreshDelay2, this.lblSec2, this.lblKey2, this.txtSkillTimerKey2);
+            this.BuildSlot(this.groupBox3, 354, "Skill timer 3", this.lblDelay3, this.txtAutoRefreshDelay3, this.lblSec3, this.lblKey3, this.txtSkillTimerKey3);
+            this.BuildSlot(this.groupBox4, 526, "Skill timer 4", this.lblDelay4, this.txtAutoRefreshDelay4, this.lblSec4, this.lblKey4, this.txtSkillTimerKey4);
+            this.BuildSlot(this.groupBox5, 698, "Skill timer 5", this.lblDelay5, this.txtAutoRefreshDelay5, this.lblSec5, this.lblKey5, this.txtSkillTimerKey5);
+
+            //
+            // lblHint
+            //
+            this.lblHint.AutoSize = true;
+            this.lblHint.ForeColor = System.Drawing.Color.DimGray;
+            this.lblHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lblHint.Location = new System.Drawing.Point(12, 128);
+            this.lblHint.Name = "lblHint";
+            this.lblHint.Size = new System.Drawing.Size(10, 13);
+            this.lblHint.TabIndex = 50;
+            this.lblHint.Text = "Delay em segundos - aceita frações (use as setas ou digite; ex.: 0,5 / 0,3). Clique no campo Key e pressione a tecla.";
+            //
             // SkillTimerForm
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(560, 270);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(865, 274);
+            this.Controls.Add(this.lblHint);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox5);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SkillTimerForm";
             this.Text = "SkillTimerForm";
+
             ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay5)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay3)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
+        }
 
+        private void BuildSlot(System.Windows.Forms.GroupBox box, int x, string title,
+            System.Windows.Forms.Label lblDelay, System.Windows.Forms.NumericUpDown delay,
+            System.Windows.Forms.Label lblSec, System.Windows.Forms.Label lblKey,
+            System.Windows.Forms.TextBox key)
+        {
+            box.Location = new System.Drawing.Point(x, 12);
+            box.Size = new System.Drawing.Size(165, 100);
+            box.TabStop = false;
+            box.Text = title;
+
+            lblDelay.AutoSize = true;
+            lblDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            lblDelay.Location = new System.Drawing.Point(12, 30);
+            lblDelay.Text = "Delay";
+
+            delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            delay.Location = new System.Drawing.Point(52, 26);
+            delay.Size = new System.Drawing.Size(64, 23);
+            delay.DecimalPlaces = 1;
+            delay.Increment = new decimal(new int[] { 1, 0, 0, 65536 });   // 0.1
+            delay.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
+            delay.Maximum = new decimal(new int[] { 600, 0, 0, 0 });
+            delay.Value = new decimal(new int[] { 1, 0, 0, 0 });
+
+            lblSec.AutoSize = true;
+            lblSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            lblSec.Location = new System.Drawing.Point(120, 30);
+            lblSec.Text = "sec";
+
+            lblKey.AutoSize = true;
+            lblKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            lblKey.Location = new System.Drawing.Point(12, 62);
+            lblKey.Text = "Key";
+
+            key.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            key.Location = new System.Drawing.Point(52, 58);
+            key.Size = new System.Drawing.Size(64, 23);
+
+            box.Controls.Add(lblDelay);
+            box.Controls.Add(delay);
+            box.Controls.Add(lblSec);
+            box.Controls.Add(lblKey);
+            box.Controls.Add(key);
         }
 
         #endregion
-        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSkillTimerKey;
-        private System.Windows.Forms.Label lblAutoRefreshKey;
-        private System.Windows.Forms.Label lblAutoRefreshDelay;
+
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtSkillTimerKey2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
+
+        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
+        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay2;
         private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay4;
+        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay5;
+
+        private System.Windows.Forms.TextBox txtSkillTimerKey;
+        private System.Windows.Forms.TextBox txtSkillTimerKey2;
         private System.Windows.Forms.TextBox txtSkillTimerKey3;
+        private System.Windows.Forms.TextBox txtSkillTimerKey4;
+        private System.Windows.Forms.TextBox txtSkillTimerKey5;
+
+        private System.Windows.Forms.Label lblDelay1;
+        private System.Windows.Forms.Label lblDelay2;
+        private System.Windows.Forms.Label lblDelay3;
+        private System.Windows.Forms.Label lblDelay4;
+        private System.Windows.Forms.Label lblDelay5;
+
+        private System.Windows.Forms.Label lblKey1;
+        private System.Windows.Forms.Label lblKey2;
+        private System.Windows.Forms.Label lblKey3;
+        private System.Windows.Forms.Label lblKey4;
+        private System.Windows.Forms.Label lblKey5;
+
+        private System.Windows.Forms.Label lblSec1;
+        private System.Windows.Forms.Label lblSec2;
+        private System.Windows.Forms.Label lblSec3;
+        private System.Windows.Forms.Label lblSec4;
+        private System.Windows.Forms.Label lblSec5;
+
+        private System.Windows.Forms.Label lblHint;
     }
 }

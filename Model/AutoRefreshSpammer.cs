@@ -11,7 +11,10 @@ namespace _4RTools.Model
     {
         private _4RThread thread;
         public string ActionName { get; set; }
-        public int RefreshDelay { get; set; } = 5;
+
+        /// <summary>Delay between key presses, in seconds. Fractional values are
+        /// allowed (e.g. 0.3 = 300 ms). 0 falls back to 1 second.</summary>
+        public double RefreshDelay { get; set; } = 1;
         public Key RefreshKey { get; set; }
 
         public AutoRefreshSpammer(string actionName)
@@ -24,9 +27,9 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                const int defaultDelayInSeconds = 1000;
-                int delayInSeconds = this.RefreshDelay * 1000;
-                int delay = delayInSeconds == 0 ? defaultDelayInSeconds : delayInSeconds;
+                const int defaultDelayMs = 1000;
+                int delayMs = (int)Math.Round(this.RefreshDelay * 1000);
+                int delay = delayMs <= 0 ? defaultDelayMs : delayMs;
                 this.thread = new _4RThread(_ => AutorefreshThreadExecution(roClient, delay));
                 _4RThread.Start(this.thread);
             }
