@@ -11,12 +11,11 @@ namespace _4RTools
         {
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
-            // Application app = new Application();
-            // app.IsMdiContainer = true;
-
-            //Forms.ClientUpdaterForm app = new Forms.ClientUpdaterForm();
-            //Forms.Container app = new Forms.Container();
-            Forms.AutoPatcher app = new Forms.AutoPatcher();
+            // PapelTools fork: skip the self-updater (AutoPatcher). It pulled
+            // releases from the upstream 4RTools repo and would overwrite this
+            // build. Start straight at the supported-servers loader instead.
+            //Forms.AutoPatcher app = new Forms.AutoPatcher();
+            Forms.ClientUpdaterForm app = new Forms.ClientUpdaterForm();
             System.Windows.Forms.Application.Run(app);
         }
     }

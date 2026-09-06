@@ -8,7 +8,7 @@
     <ProjectGuid>{A7D78B00-6CE1-4B4D-90A3-1D2E93C7F68A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>_4RTools</RootNamespace>
-    <AssemblyName>4RTools</AssemblyName>
+    <AssemblyName>PapelTools</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
