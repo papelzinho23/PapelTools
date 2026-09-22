@@ -58,6 +58,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
             this.tabSkillTimer = new System.Windows.Forms.TabPage();
+            this.tabAutoSkillConfirm = new System.Windows.Forms.TabPage();
             this.atkDefMode = new System.Windows.Forms.TabControl();
             this.tabDebuffRecovery = new System.Windows.Forms.TabPage();
             this.characterName = new System.Windows.Forms.Label();
@@ -311,14 +312,26 @@ namespace _4RTools.Forms
             this.tabSkillTimer.TabIndex = 5;
             this.tabSkillTimer.Text = "Skill timers";
             this.tabSkillTimer.UseVisualStyleBackColor = true;
-            // 
+            //
+            // tabAutoSkillConfirm
+            //
+            this.tabAutoSkillConfirm.ImageIndex = 0;
+            this.tabAutoSkillConfirm.Location = new System.Drawing.Point(4, 22);
+            this.tabAutoSkillConfirm.Name = "tabAutoSkillConfirm";
+            this.tabAutoSkillConfirm.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAutoSkillConfirm.Size = new System.Drawing.Size(865, 274);
+            this.tabAutoSkillConfirm.TabIndex = 6;
+            this.tabAutoSkillConfirm.Text = "Auto Confirm";
+            this.tabAutoSkillConfirm.UseVisualStyleBackColor = true;
+            //
             // atkDefMode
-            // 
+            //
             this.atkDefMode.Controls.Add(this.tabPageSpammer);
             this.atkDefMode.Controls.Add(this.tabDebuffRecovery);
             this.atkDefMode.Controls.Add(this.tabPageAutobuffSkill);
             this.atkDefMode.Controls.Add(this.tabPageAutobuffStuff);
             this.atkDefMode.Controls.Add(this.tabSkillTimer);
+            this.atkDefMode.Controls.Add(this.tabAutoSkillConfirm);
             this.atkDefMode.Controls.Add(this.tabMacroSwitch);
             this.atkDefMode.Controls.Add(this.tabPageMacroSongs);
             this.atkDefMode.Controls.Add(this.atkDef);
@@ -438,6 +451,7 @@ namespace _4RTools.Forms
         private TabPage tabDebuffRecovery;
         private Panel OnOffPanel;
         private TabPage tabSkillTimer;
+        private TabPage tabAutoSkillConfirm;
         private Label lbPowered;
     }
 }

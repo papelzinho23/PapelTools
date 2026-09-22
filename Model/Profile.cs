@@ -36,6 +36,7 @@ namespace _4RTools.Model
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                     profile.MacroSwitch = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.MacroSwitch));
                     profile.DebuffsRecovery = JsonConvert.DeserializeObject<DebuffsRecovery>(Profile.GetByAction(rawObject, profile.DebuffsRecovery));
+                    profile.AutoSkillConfirm = JsonConvert.DeserializeObject<AutoSkillConfirm>(Profile.GetByAction(rawObject, profile.AutoSkillConfirm));
                 }
             }
             catch (Exception ex)
@@ -129,6 +130,7 @@ namespace _4RTools.Model
 
         public ATKDEFMode AtkDefMode { get; set; }
         public DebuffsRecovery DebuffsRecovery { get; set; }
+        public AutoSkillConfirm AutoSkillConfirm { get; set; }
 
         public Profile(string name)
         {
@@ -149,6 +151,7 @@ namespace _4RTools.Model
             this.MacroSwitch = new Macro(Macro.ACTION_NAME_MACRO_SWITCH, MacroSwitchForm.TOTAL_MACRO_LANES);
             this.AtkDefMode = new ATKDEFMode();
             this.DebuffsRecovery = new DebuffsRecovery();
+            this.AutoSkillConfirm = new AutoSkillConfirm();
         }
 
         public static object GetByAction(dynamic obj, Action action)

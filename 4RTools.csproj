@@ -287,6 +287,12 @@
     <Compile Include="Forms\SkillTimerForm.Designer.cs">
       <DependentUpon>SkillTimerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AutoSkillConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AutoSkillConfirmForm.Designer.cs">
+      <DependentUpon>AutoSkillConfirmForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StuffAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,6 +328,7 @@
     <Compile Include="Model\ATKDEFMode.cs" />
     <Compile Include="Model\Autopot.cs" />
     <Compile Include="Model\Autobuff.cs" />
+    <Compile Include="Model\AutoSkillConfirm.cs" />
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\Buff.cs" />
     <Compile Include="Model\BuffContainer.cs" />
@@ -361,6 +368,7 @@
     <Compile Include="Utils\EffectStatusIDs.cs" />
     <Compile Include="Utils\AppConfig.cs" />
     <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\CursorUtils.cs" />
     <Compile Include="Utils\FormUtils.cs" />
     <Compile Include="Utils\Interop.cs" />
     <Compile Include="Utils\KeyboardHook.cs" />

@@ -29,6 +29,7 @@ namespace _4RTools.Forms
             SetAutopotWindow();
             SetAutopotYggWindow();
             SetSkillTimerWindow();
+            SetAutoSkillConfirmWindow();
             SetProfileWindow();
             SetAHKWindow();
             SetAutobuffSkillWindow();
@@ -233,6 +234,15 @@ namespace _4RTools.Forms
             frm.MdiParent = this;
             frm.Show();
             addform(this.tabSkillTimer, frm);
+        }
+
+        public void SetAutoSkillConfirmWindow()
+        {
+            AutoSkillConfirmForm frm = new AutoSkillConfirmForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabAutoSkillConfirm, frm);
         }
 
         public void SetProfileWindow()
